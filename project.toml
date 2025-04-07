@@ -1,0 +1,33 @@
+
+[target]
+name = "chat"
+#Include file directory
+inc = "inc"
+#Source file 
+src = "src"
+#Cpp file that contained main function
+entrance = "main.cpp"
+#Supported Library type:static(sta),dynamic(dyn)
+mode = "sta"
+#Library output directory
+lib = "lib"
+#Execute output directory
+bin = "bin"
+
+[compiler]
+#Supported C++ compiler:g++ clang++
+cxx = "g++"
+#Supported C++ standard:98 11 14 17 20
+std = 17
+#enable Wall mode
+wall = true
+#Setting Optimization Level(0,1,2,3)
+ol = 1
+#Linking extra system library(e.g. ["liba","libb"])
+link = []
+#Adding more arguments
+extra = []
+
+[run]
+#Setting environment variable (e.g. ["A=123","B=cde"])
+env = []
