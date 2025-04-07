@@ -34,7 +34,7 @@ void Connection::readCallback(bufferevent *bev, void *ctx)
 {
     // 指针转换
     auto self = static_cast<Connection *>(ctx);
-    char buffer[1024];
+    char buffer[1024] = {0};
     // Echo
     while (bufferevent_read(bev, buffer, sizeof(buffer)))
     {

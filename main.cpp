@@ -1,6 +1,7 @@
-#include <iostream>
+#include "Server.h"
 
 int main(void)
 {
-    std::cout << "你好" << std::endl;
+    Server server(8080);
+    server.run();
 }

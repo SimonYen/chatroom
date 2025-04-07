@@ -24,7 +24,7 @@ wall = true
 #Setting Optimization Level(0,1,2,3)
 ol = 1
 #Linking extra system library(e.g. ["liba","libb"])
-link = []
+link = ["fmt", "event", "spdlog"]
 #Adding more arguments
 extra = []
 
